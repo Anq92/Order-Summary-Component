@@ -1,0 +1,33 @@
+@import 'colors'
+@import 'containers'
+
+
+.change_plan
+    color: $bright_blue
+    transition: 0.3s
+
+.payment_button
+    @extend %inside_elements
+    display: block
+    background-color: $bright_blue
+    color: $pale_blue
+    padding: 3%
+    margin: 2%
+    box-shadow: 0 2rem 1rem $pale_blue
+    cursor: pointer
+    
+.cancel
+    color: $desaturated_blue
+    text-decoration: none
+    font-weight: bold
+    transition: 0.3s ease
+
+.payment_button:hover
+    opacity: 70%
+    transition: 0.3s ease
+.cancel:hover
+    color: $dark_blue
+
+.change_plan:hover
+    text-decoration: none
+    opacity: 70% 

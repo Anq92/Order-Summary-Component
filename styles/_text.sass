@@ -1,0 +1,71 @@
+@use 'colors'
+
+%font_base
+    font-family: 'Red Hat Display', sans-serif
+
+%boldtext    
+    font-weight: 900
+
+%headings
+    color: colors.$dark_blue    
+
+$normal_text_size: clamp(1.1rem, 3.7vw, 1.7rem)
+
+body
+    @extend %font_base
+
+h1 
+    font-size: clamp(1.5rem, 5.7vw, 2.8rem)
+    padding-top: 6%
+
+
+h1, .plan_type
+    @extend %boldtext
+    @extend %headings
+    
+
+p, .price
+    color: colors.$desaturated_blue    
+
+p 
+    text-align: center 
+    font-size: $normal_text_size
+    font-weight: 500
+    margin-top: 0
+    margin-bottom: 0
+
+ul
+    list-style-type: none
+    padding-left: 0
+    
+.plan_type
+    @extend %boldtext
+    font-size: $normal_text_size
+
+.price
+    font-size: $normal_text_size
+
+.change_plan
+    font-size: clamp(1rem, 3.6vw, 1.5rem)
+    font-weight: 700
+    align-self: center
+    flex-grow: 1
+
+.payment_button
+    @extend %font_base
+    font-size: $normal_text_size
+    font-weight: 700
+
+.plan_price
+    display: inline
+
+.cancel
+    font-size: $normal_text_size
+    margin: 7%
+
+footer  
+    font-size: 1.1rem
+    text-align: center
+
+footer a  
+    color: hsl(228, 45%, 44%)

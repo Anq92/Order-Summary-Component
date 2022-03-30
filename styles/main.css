@@ -1,0 +1,271 @@
+.payment_button, body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h1, .plan_type {
+  font-weight: 900;
+}
+
+h1, .plan_type {
+  color: #1f2f56;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5.7vw, 2.8rem);
+  padding-top: 6%;
+}
+
+p, .price {
+  color: #7280a7;
+}
+
+p {
+  text-align: center;
+  font-size: clamp(1.1rem, 3.7vw, 1.7rem);
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.plan_type {
+  font-size: clamp(1.1rem, 3.7vw, 1.7rem);
+}
+
+.price {
+  font-size: clamp(1.1rem, 3.7vw, 1.7rem);
+}
+
+.change_plan {
+  font-size: clamp(1rem, 3.6vw, 1.5rem);
+  font-weight: 700;
+  align-self: center;
+  flex-grow: 1;
+}
+
+.payment_button {
+  font-size: clamp(1.1rem, 3.7vw, 1.7rem);
+  font-weight: 700;
+}
+
+.plan_price {
+  display: inline;
+}
+
+.cancel {
+  font-size: clamp(1.1rem, 3.7vw, 1.7rem);
+  margin: 7%;
+}
+
+footer {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #3e52a3;
+}
+
+.payment_button, .plan_container {
+  width: 80%;
+  border-radius: 1.2rem;
+}
+
+main {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.background {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.plan_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f7ff;
+  margin: 5%;
+}
+
+.icon_plan_price {
+  display: flex;
+  flex-grow: 3;
+  align-items: center;
+  padding-left: 4%;
+  padding-top: 4.2%;
+  padding-bottom: 4.2%;
+}
+
+.icon {
+  padding-right: clamp(0.8rem, 4vw, 2rem);
+}
+
+p, plan_container, payment_button {
+  width: 85%;
+}
+
+@media screen and (min-width: 420px) {
+  .box {
+    height: clamp(54.6rem, 140vw, 70rem);
+    width: clamp(35rem, 90vw, 45rem);
+  }
+}
+@media screen and (max-width: 420px) {
+  .box {
+    height: clamp(32.74rem, 146.57vw, 57rem);
+    width: clamp(19.8rem, 90vw, 35rem);
+  }
+}
+.change_plan {
+  color: #3829e0;
+  transition: 0.3s;
+}
+
+.payment_button {
+  display: block;
+  background-color: #3829e0;
+  color: #e0e8ff;
+  padding: 3%;
+  margin: 2%;
+  box-shadow: 0 2rem 1rem #e0e8ff;
+  cursor: pointer;
+}
+
+.cancel {
+  color: #7280a7;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.payment_button:hover {
+  opacity: 70%;
+  transition: 0.3s ease;
+}
+
+.cancel:hover {
+  color: #1f2f56;
+}
+
+.change_plan:hover {
+  text-decoration: none;
+  opacity: 70%;
+}
+
+.plan_container {
+  width: 80%;
+  border-radius: 1.2rem;
+}
+
+main {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.background {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.plan_container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f7ff;
+  margin: 5%;
+}
+
+.icon_plan_price {
+  display: flex;
+  flex-grow: 3;
+  align-items: center;
+  padding-left: 4%;
+  padding-top: 4.2%;
+  padding-bottom: 4.2%;
+}
+
+.icon {
+  padding-right: clamp(0.8rem, 4vw, 2rem);
+}
+
+p, plan_container, payment_button {
+  width: 85%;
+}
+
+@media screen and (min-width: 420px) {
+  .box {
+    height: clamp(54.6rem, 140vw, 70rem);
+    width: clamp(35rem, 90vw, 45rem);
+  }
+}
+@media screen and (max-width: 420px) {
+  .box {
+    height: clamp(32.74rem, 146.57vw, 57rem);
+    width: clamp(19.8rem, 90vw, 35rem);
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e0e8ff;
+}
+
+.icon {
+  max-width: clamp(2.8rem, 9.2vw, 4.8rem);
+  max-height: 4.8rem;
+}
+
+@media screen and (min-width: 1250px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position: center top;
+  }
+}
+@media screen and (max-width: 1250px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto auto;
+  }
+}
+@media screen and (max-width: 380px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 35vh;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

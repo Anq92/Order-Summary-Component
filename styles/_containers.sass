@@ -1,0 +1,59 @@
+@import 'colors'
+
+$box_radius: 2rem
+$inside_radius: 1.1rem
+%inside_elements 
+    width: 80%    
+    border-radius: 1.2rem
+
+main 
+    min-height: 95vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+.box 
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0 auto
+    background-color: white
+    border-radius: $box_radius
+
+.background 
+    width: 100%
+    border-radius: $box_radius $box_radius 0 0 
+
+.plan_container
+    @extend %inside_elements
+    display: flex
+    justify-content: space-between
+    background-color: $very_pale_blue
+    margin: 5%
+
+.icon_plan_price
+    display: flex
+    flex-grow:3
+    align-items: center
+    padding-left: 4%
+    padding-top: 4.2%
+    padding-bottom: 4.2%
+
+.icon
+    padding-right: clamp(0.8rem, 4vw, 2rem)
+
+p, plan_container, payment_button 
+    width: 85%
+
+@media screen and (min-width: 420px)
+
+    .box 
+        height: clamp(54.6rem, 140.0vw, 70rem)
+        width: clamp(35rem, 90vw, 45rem)
+
+
+@media screen and (max-width: 420px)
+
+    .box 
+        height: clamp(32.74rem, 146.57vw, 57rem)
+        width: clamp(19.8rem, 90vw, 35rem)
